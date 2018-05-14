@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">News App</string>
+
+    <string name="no_news_found">No news found.</string>
+
+    <string name="no_internet_connection">No internet connection.</string>
+
+    <string name="section">Section</string>
+
+    <string name="title">Title</string>
+
+    <string name="author">Author</string>
+
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Settings</string>
+
+    <string name="settings_show_elements_label">Show Elements</string>
+    <string name="settings_show_elements_key" translatable="false">show-elements</string>
+    <string name="settings_show_elements_default" translatable="false">@string/settings_show_elements_all_value</string>
+
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order-by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_newest_value</string>
+
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+    <string name="settings_show_elements_all_label">All</string>
+    <string name="settings_show_elements_all_value" translatable="false">all</string>
+
+    <string name="settings_show_elements_audio_label">Audio</string>
+    <string name="settings_show_elements_audio_value" translatable="false">audio</string>
+
+    <string name="settings_show_elements_image_label">Image</string>
+    <string name="settings_show_elements_image_value" translatable="false">image</string>
+
+    <string name="settings_show_elements_video_label">Video</string>
+    <string name="settings_show_elements_video_value" translatable="false">video</string>
+
+</resources>
