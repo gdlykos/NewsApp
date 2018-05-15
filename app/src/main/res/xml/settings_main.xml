@@ -10,6 +10,13 @@
         android:title="@string/settings_order_by_label" />
 
     <ListPreference
+        android:defaultValue="@string/settings_use_date_default"
+        android:entries="@array/settings_use_date_labels"
+        android:entryValues="@array/settings_use_date_values"
+        android:key="@string/settings_use_date_key"
+        android:title="@string/settings_use_date_label" />
+
+    <ListPreference
         android:defaultValue="@string/settings_show_elements_all_value"
         android:entries="@array/settings_show_elements_labels"
         android:entryValues="@array/settings_show_elements_values"

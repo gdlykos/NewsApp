@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<L
     private static final int ARTICLE_LOADER_ID = 1;
 
     private static final String GUARDIAN_REQUEST_URL = "http://content.guardianapis.com/search?";
-//    private static final String GUARDIAN_REQUEST_URL = "http://content.guardianapis.com/search?q=film&show-tags=contributor&api-key=89b45e8a-746f-4c1d-9a3b-1110bacfeac4";
     private static final String KEY = "89b45e8a-746f-4c1d-9a3b-1110bacfeac4";
     private TextView mEmptyStateTextView;
     private ArticleAdapter mAdapter;
@@ -80,9 +79,13 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<L
                 getString(R.string.settings_show_elements_key),
                 getString(R.string.settings_show_elements_default));
 
-        String orderBy  = sharedPrefs.getString(
+        String orderBy = sharedPrefs.getString(
                 getString(R.string.settings_order_by_key),
-                getString(R.string.settings_order_by_default)
+                getString(R.string.settings_order_by_default));
+
+        String useDate = sharedPrefs.getString(
+                getString(R.string.settings_use_date_key),
+                getString(R.string.settings_use_date_default)
         );
         Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
         Uri.Builder uriBuilder = baseUri.buildUpon();
@@ -90,12 +93,12 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<L
         uriBuilder.appendQueryParameter("q", "film");
         uriBuilder.appendQueryParameter("show-tags", "contributor");
         uriBuilder.appendQueryParameter("show-elements", showElements);
+        uriBuilder.appendQueryParameter("use-date", useDate);
         uriBuilder.appendQueryParameter("order-by", orderBy);
         uriBuilder.appendQueryParameter("api-key", KEY);
 
         Log.i(LOG_TAG, GUARDIAN_REQUEST_URL);
-        return new ArticleLoader(this, GUARDIAN_REQUEST_URL);
-
+        return new ArticleLoader(this, uriBuilder.toString());
     }
 
     @Override

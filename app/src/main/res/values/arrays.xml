@@ -10,6 +10,16 @@
         <item>@string/settings_order_by_oldest_value</item>
     </string-array>
 
+    <string-array name="settings_use_date_labels">
+        <item>@string/settings_use_date_published_label</item>
+        <item>@string/settings_use_date_last_modified_label</item>
+    </string-array>
+
+    <string-array name="settings_use_date_values">
+        <item>@string/settings_use_date_published_value</item>
+        <item>@string/settings_use_date_last_modified_value</item>
+    </string-array>
+
     <string-array name="settings_show_elements_labels">
         <item>@string/settings_show_elements_all_label</item>
         <item>@string/settings_show_elements_audio_label</item>

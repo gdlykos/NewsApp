@@ -22,11 +22,21 @@
     <string name="settings_order_by_key" translatable="false">order-by</string>
     <string name="settings_order_by_default" translatable="false">@string/settings_order_by_newest_value</string>
 
+    <string name="settings_use_date_label">Use Date</string>
+    <string name="settings_use_date_key" translatable="false">use-date</string>
+    <string name="settings_use_date_default" translatable="false">@string/settings_use_date_published_value</string>
+
     <string name="settings_order_by_newest_label">Newest</string>
     <string name="settings_order_by_newest_value" translatable="false">newest</string>
 
     <string name="settings_order_by_oldest_label">Oldest</string>
     <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+    <string name="settings_use_date_published_label">Published</string>
+    <string name="settings_use_date_published_value" translatable="false">published</string>
+
+    <string name="settings_use_date_last_modified_label">Last modified</string>
+    <string name="settings_use_date_last_modified_value" translatable="false">last-modified</string>
 
     <string name="settings_show_elements_all_label">All</string>
     <string name="settings_show_elements_all_value" translatable="false">all</string>
