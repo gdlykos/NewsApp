@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<L
     private static final int ARTICLE_LOADER_ID = 1;
 
     private static final String GUARDIAN_REQUEST_URL = "http://content.guardianapis.com/search?";
-    private static final String KEY = "89b45e8a-746f-4c1d-9a3b-1110bacfeac4";
+    private static final String KEY = "??????";
     private TextView mEmptyStateTextView;
     private ArticleAdapter mAdapter;
 
